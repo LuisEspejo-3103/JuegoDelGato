@@ -219,7 +219,7 @@ public class JuegoDelGato extends JFrame implements ActionListener{
             P2.setText("");
             reset();
             }
-        if(e.getSource() == aceptar){
+        if(e.getSource() == aceptar){/*COmentario*/
             if(P1.getText().length() > 0 && P2.getText().length() > 0){
             String player1 = P1.getText();
             Ju1.setText("Jugador X: "+player1);
