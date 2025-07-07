@@ -15,9 +15,10 @@ import javax.swing.JMenuBar;
 
 /**
  *
- * @author Wicho
+ * @author Luis Manuel Espejo Vázquez
  */
 public class JuegoDelGato extends JFrame implements ActionListener{
+    /*Indicar con comentarios cual es el proposito de cada variable  objeto de la clase*/
     private JButton bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9, aceptar,volJu;
     private boolean turno = true, ca1 = true, ca2 = true, ca3 = true, ca4 = true, ca5 = true, ca6 = true, ca7 = true, ca8 = true, ca9 = true;
     private TextField P1, P2;
