@@ -16,6 +16,7 @@ import javax.swing.JMenuBar;
 /**
  *
  * @author Wicho
+ * NOTA 7 DE JULIO, SE DEBEN CREAR MÉTODOS QUE SIMPLIFIQUEN EL VOLVER A REPETIR EL CÓDIGO
  */
 public class JuegoDelGato extends JFrame implements ActionListener{
     /*Se deben asignar los comentarios para identificar la funcionalidad 
