@@ -15,10 +15,17 @@ import javax.swing.JMenuBar;
 
 /**
  *
+<<<<<<< HEAD
  * @author Luis Manuel Espejo Vázquez
  */
+
+    /*Indicar con comentarios cual es el proposito de cada variable  objeto de la clase
+ * @author Wicho
+ * NOTA 7 DE JULIO, SE DEBEN CREAR MÉTODOS QUE SIMPLIFIQUEN EL VOLVER A REPETIR EL CÓDIGO
+ */
 public class JuegoDelGato extends JFrame implements ActionListener{
-    /*Indicar con comentarios cual es el proposito de cada variable  objeto de la clase*/
+    /*Se deben asignar los comentarios para identificar la funcionalidad 
+    de cada una de la variables que se encuentran en la clase principal*/
     private JButton bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9, aceptar,volJu;
     private boolean turno = true, ca1 = true, ca2 = true, ca3 = true, ca4 = true, ca5 = true, ca6 = true, ca7 = true, ca8 = true, ca9 = true;
     private TextField P1, P2;
@@ -220,7 +227,7 @@ public class JuegoDelGato extends JFrame implements ActionListener{
             P2.setText("");
             reset();
             }
-        if(e.getSource() == aceptar){
+        if(e.getSource() == aceptar){/*COmentario*/
             if(P1.getText().length() > 0 && P2.getText().length() > 0){
             String player1 = P1.getText();
             Ju1.setText("Jugador X: "+player1);
@@ -251,7 +258,7 @@ public class JuegoDelGato extends JFrame implements ActionListener{
                 c1 = "X";
                 con++;
                 win.setText(evalua(c1, c2, c3, c4, c5, c6, c7, c8, c9, play1, play2));
-                if(fin() == true){
+                if(fin()){//Se cambio la validación porque la función "fin" ya manda un boleano
                     setLocationRelativeTo(null);
                 }
                 if(empate()== true){
@@ -265,7 +272,7 @@ public class JuegoDelGato extends JFrame implements ActionListener{
                 c1 = "O";
                 con++;
                 win.setText(evalua(c1, c2, c3, c4, c5, c6, c7, c8, c9, play1, play2));
-                if(fin() == true){
+                if(fin()){//Se cambio la validación porque la función "fin" ya manda un boleano
                     setLocationRelativeTo(null);
                 }
                 if(empate()== true){
@@ -285,7 +292,7 @@ public class JuegoDelGato extends JFrame implements ActionListener{
                 c2 = "X";
                 con++;
                 win.setText(evalua(c1, c2, c3, c4, c5, c6, c7, c8, c9, play1, play2));
-                if(fin() == true){
+                if(fin()){//Se cambio la validación porque la función "fin" ya manda un boleano
                     setLocationRelativeTo(null);
                 }
                 if(empate()== true){
@@ -298,7 +305,7 @@ public class JuegoDelGato extends JFrame implements ActionListener{
                 c2 = "O";
                 con++;
                 win.setText(evalua(c1, c2, c3, c4, c5, c6, c7, c8, c9, play1, play2));
-                if(fin() == true){
+                if(fin()){//Se cambio la validación porque la función "fin" ya manda un boleano
                     setLocationRelativeTo(null);
                 }
                 if(empate()== true){
@@ -318,7 +325,7 @@ public class JuegoDelGato extends JFrame implements ActionListener{
                 c3 = "X";
                 con++;
                 win.setText(evalua(c1, c2, c3, c4, c5, c6, c7, c8, c9, play1, play2));
-                if(fin() == true){
+                if(fin()){//Se cambio la validación porque la función "fin" ya manda un boleano
                     setLocationRelativeTo(null);
                 }
                 if(empate()== true){
@@ -331,7 +338,7 @@ public class JuegoDelGato extends JFrame implements ActionListener{
                 c3 = "O";
                 con++;
                 win.setText(evalua(c1, c2, c3, c4, c5, c6, c7, c8, c9, play1, play2));
-                if(fin() == true){
+                if(fin()){//Se cambio la validación porque la función "fin" ya manda un boleano
                     setLocationRelativeTo(null);
                 }
                 if(empate()== true){
@@ -351,7 +358,7 @@ public class JuegoDelGato extends JFrame implements ActionListener{
                 c4 = "X";
                 con++;
                 win.setText(evalua(c1, c2, c3, c4, c5, c6, c7, c8, c9, play1, play2));
-                if(fin() == true){
+                if(fin()){//Se cambio la validación porque la función "fin" ya manda un boleano
                     setLocationRelativeTo(null);
                 }
                 if(empate()== true){
@@ -364,7 +371,7 @@ public class JuegoDelGato extends JFrame implements ActionListener{
                 c4 = "O";
                 con++;
                 win.setText(evalua(c1, c2, c3, c4, c5, c6, c7, c8, c9, play1, play2));
-                if(fin() == true){
+                if(fin()){//Se cambio la validación porque la función "fin" ya manda un boleano
                     setLocationRelativeTo(null);
                 }
                 if(empate()== true){
@@ -384,7 +391,7 @@ public class JuegoDelGato extends JFrame implements ActionListener{
                 c5 = "X";
                 con++;
                 win.setText(evalua(c1, c2, c3, c4, c5, c6, c7, c8, c9, play1, play2));
-                if(fin() == true){
+                if(fin()){//Se cambio la validación porque la función "fin" ya manda un boleano
                     setLocationRelativeTo(null);
                 }
                 if(empate()== true){
@@ -397,7 +404,7 @@ public class JuegoDelGato extends JFrame implements ActionListener{
                 c5 = "O";
                 con++;
                 win.setText(evalua(c1, c2, c3, c4, c5, c6, c7, c8, c9, play1, play2));
-                if(fin() == true){
+                if(fin()){//Se cambio la validación porque la función "fin" ya manda un boleano
                     setLocationRelativeTo(null);
                 }
                 if(empate()== true){
@@ -417,7 +424,7 @@ public class JuegoDelGato extends JFrame implements ActionListener{
                 c6 = "X";
                 con++;
                 win.setText(evalua(c1, c2, c3, c4, c5, c6, c7, c8, c9, play1, play2));
-                if(fin() == true){
+                if(fin()){//Se cambio la validación porque la función "fin" ya manda un boleano
                     setLocationRelativeTo(null);
                 }
                 if(empate()== true){
@@ -430,7 +437,7 @@ public class JuegoDelGato extends JFrame implements ActionListener{
                 c6 = "O";
                 con++;
                 win.setText(evalua(c1, c2, c3, c4, c5, c6, c7, c8, c9, play1, play2));
-                if(fin() == true){
+                if(fin()){//Se cambio la validación porque la función "fin" ya manda un boleano
                     setLocationRelativeTo(null);
                 }
                 if(empate()== true){
@@ -450,7 +457,7 @@ public class JuegoDelGato extends JFrame implements ActionListener{
                 c7 = "X";
                 con++;
                 win.setText(evalua(c1, c2, c3, c4, c5, c6, c7, c8, c9, play1, play2));
-                if(fin() == true){
+                if(fin()){//Se cambio la validación porque la función "fin" ya manda un boleano
                     setLocationRelativeTo(null);
                 }
                 if(empate()== true){
@@ -463,7 +470,7 @@ public class JuegoDelGato extends JFrame implements ActionListener{
                 c7 = "O";
                 con++;
                 win.setText(evalua(c1, c2, c3, c4, c5, c6, c7, c8, c9, play1, play2));
-                if(fin() == true){
+                if(fin()){//Se cambio la validación porque la función "fin" ya manda un boleano
                     setLocationRelativeTo(null);
                 }
                 if(empate()== true){
@@ -483,7 +490,7 @@ public class JuegoDelGato extends JFrame implements ActionListener{
                 c8 = "X";
                 con++;
                 win.setText(evalua(c1, c2, c3, c4, c5, c6, c7, c8, c9, play1, play2));
-                if(fin() == true){
+                if(fin()){//Se cambio la validación porque la función "fin" ya manda un boleano
                     setLocationRelativeTo(null);
                 }
                 if(empate()== true){
@@ -496,7 +503,7 @@ public class JuegoDelGato extends JFrame implements ActionListener{
                 c8 = "O";
                 con++;
                 win.setText(evalua(c1, c2, c3, c4, c5, c6, c7, c8, c9, play1, play2));
-                if(fin() == true){
+                if(fin()){//Se cambio la validación porque la función "fin" ya manda un boleano
                     setLocationRelativeTo(null);
                 }
                 if(empate()== true){
@@ -516,7 +523,7 @@ public class JuegoDelGato extends JFrame implements ActionListener{
                 c9 = "X";
                 con++;
                 win.setText(evalua(c1, c2, c3, c4, c5, c6, c7, c8, c9, play1, play2));
-                if(fin() == true){
+                if(fin()){//Se cambio la validación porque la función "fin" ya manda un boleano
                     setLocationRelativeTo(null);
                 }
                 if(empate()== true){
@@ -529,7 +536,7 @@ public class JuegoDelGato extends JFrame implements ActionListener{
                 c9 = "O";
                 con++;
                 win.setText(evalua(c1, c2, c3, c4, c5, c6, c7, c8, c9, play1, play2));
-                if(fin() == true){
+                if(fin()){//Se cambio la validación porque la función "fin" ya manda un boleano
                     setLocationRelativeTo(null);
                 }
                 if(empate()== true){
